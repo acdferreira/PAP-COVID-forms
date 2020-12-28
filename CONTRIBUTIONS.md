@@ -5,3 +5,4 @@
 # Contributions
 
  - [Tiago Carvalho]() - ACES Alto Ave
+ - [Ana Dias Ferreira](acdferreira@arsnorte.min-saude.pt) - ACES Porto Ocidental
