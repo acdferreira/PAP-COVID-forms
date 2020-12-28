@@ -9,7 +9,7 @@
  *
  *     You are forbidden, however, to remove ANY COPYRIGHT NOTICE FROM BOTH THE
  *     LICENSE FILE OR SOURCE CODE, either visible or invisible to the public.
- *     
+ *
  *     This program is distributed in the hope that it will be useful,
  *     but WITHOUT ANY WARRANTY; without even the implied warranty of
  *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -67,7 +67,7 @@ function addLoadingStatus(button) {
 }
 
 /**
- * 
+ *
  * @param {Element} button
  */
 function removeLoadingStatus(button) {
@@ -80,7 +80,7 @@ function removeContact(ev) {
 }
 
 /**
- * 
+ *
  * @returns {URLSearchParams}
  */
 function getParams() {
@@ -91,7 +91,7 @@ function getParams() {
 }
 
 /**
- * 
+ *
  * @param {jQuery} $wrapper
  * @param {boolean} [makeRequired=true]
  */
@@ -102,7 +102,7 @@ function switchActivate($wrapper, makeRequired) {
   $wrapper.toggle();
 
   if (!makeRequired) return;
-  
+
   if ($wrapper.is(":visible")) {
     input.attr('required', true);
   } else {
@@ -122,7 +122,7 @@ function switchActivate($wrapper, makeRequired) {
  */
 function validateDate(input) {
   var idate = input.value;
-  
+
   if (idate instanceof Date) {
     //return true;
   } else if (typeof idate === 'string') {
@@ -205,6 +205,13 @@ $(document).ready(function () {
       items.show();
     }
 
+    if (this.value === 'estudante') {
+      $('#escola-wrapper').show();
+      console.log('blabla')
+    } else {
+      $('#escola-wrapper').hide();
+    }
+
     if (items.is(":visible")) {
       items.children('input').each(function() {
         var item = $(this);
@@ -228,7 +235,7 @@ $(document).ready(function () {
     $('#freguesia-wrapper').show();
 
     fregSelect.find("option").hide();
-    
+
     if (selectedConcelho === 'outro') {
       input.val('');
       freg.val('');
@@ -245,7 +252,7 @@ $(document).ready(function () {
           return $(this).data('concelho') === selectedConcelho}
         )
         .show();
-      
+
       fregSelect.prop('selectedIndex',0);
       //fregSelect.prop('required', true);
       fregSelect.show();
@@ -256,13 +263,13 @@ $(document).ready(function () {
     } else {
       input.prop('required', false);
     }
-    
+
   });
-  
+
   $('#freguesia-select').change(function() {
     $('#freguesia').val(this.value);
   })
-  
+
   $('#profissional_de_lar').click(function() {
     switchActivate($('#nome-do-lar-wrapper'));
   });
@@ -271,5 +278,3 @@ $(document).ready(function () {
     switchActivate($('#instituicao-de-saude-wrapper'));
   });
 });
-
-
