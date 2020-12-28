@@ -117,7 +117,7 @@
                 <div class="form-group required">
                     <label for="morada">Morada:</label>
                     <textarea name="morada" id="morada" class="form-control" required></textarea>
-                    <small id="localidadeHelp" class="form-text text-muted">Morada <b>onde se encontra a residir atualmente </b>,
+                    <small id="localidadeHelp" class="form-text text-muted">Morada <b>onde se encontra a residir atualmente</b>,
                         e não a morada oficial/fiscal</small>
                 </div>
                 
@@ -151,6 +151,15 @@
                         <option value="ALDOAR" data-concelho="PORTO">Aldoar</option>
                       <option value="FOZ DO DOURO" data-concelho="PORTO">Foz do Douro</option>
                       <option value="NEVOGILDE" data-concelho="PORTO">Nevogilde</option>
+                      <option value="CEDOFEITA" data-concelho="PORTO">Cedofeita</option>
+                      <option value="SANTO ILDEFONSO" data-concelho="PORTO">Santo Ildefonso</option>
+                      <option value="SÉ" data-concelho="PORTO">Sé</option>
+                      <option value="MIRAGAIA" data-concelho="PORTO">Miragaia</option>
+                      <option value="SÃO NICOLAU" data-concelho="PORTO">São Nicolau</option>
+                      <option value="VITÓRIA" data-concelho="PORTO">Vitória</option>
+                      <option value="LORDELO DO OURO" data-concelho="PORTO">Lordelo do Ouro</option>
+                      <option value="MASSARELOS" data-concelho="PORTO">Massarelos</option>
+                      <option value="RAMALDE" data-concelho="PORTO">Ramalde</option>
                     </select>
                     <input name="freguesia" id="freguesia" type="text" class="form-control">
                 </div>
@@ -172,6 +181,7 @@
                         <option value="empregado">Empregado</option>
                         <option value="desempregado">Desempregado</option>
                         <option value="reformado">Reformado</option>
+                        <option value="estudante">Estudante</option>
                     </select>
                 </div>
 
@@ -204,7 +214,19 @@
                     <label for="instituicao_de_saude">Instituição de Saúde a que pertence:</label>
                     <input name="instituicao_de_saude" id="instituicao_de_saude" type="text" class="form-control">
                 </div>
+              
+                <div class="form-group custom-control custom-switch form-dados-prof-item" style="display: none">
+                    <input type="checkbox" class="custom-control-input" name="estudante"
+                           id="estudante">
+                    <label class="custom-control-label" for="estudante">É estudante?<span
+                            class="required-here"></span></label>
+                </div>
 
+                <div id="escola-wrapper" class="form-group required" style="display: none">
+                    <label for="escola">Creche/Escola/Faculdade que frequenta:</label>
+                    <input name="escola" id="escola" type="text" class="form-control">
+                </div>
+              
             </fieldset>
 
 
