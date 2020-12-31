@@ -9,6 +9,6 @@ var config = {
     url: "https://prod-189.westeurope.logic.azure.com:443/workflows/7ae4736ffaeb43c0b7ea9bbfbc1f52a3/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=YrukeKGe6UtQQaQfyq1QY4z3-17llLNPKbAWBJOGhas"
   },
   form3: {
-    url: ""
+    url: "https://prod-74.westeurope.logic.azure.com:443/workflows/2076c7b93810440298c2cbe9c98b6b3c/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=x3Fk1yc3_OyeCtWI15M9-hl9mv8ca9p634f62XC6XNg"
   }
 }
